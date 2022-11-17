@@ -1,6 +1,5 @@
-# OOP school library: add Person, Student and Teacher classes.
-
-> In this project, you will start building your school library app. In this initial step, you will implement the classes to represent students and teachers.
+# OOP school library: decorate a class
+>In this project, you will use the Decorator design pattern to correct the names of people.
 
 ## Getting Started
 - Install Ruby on your computer.
