@@ -1,5 +1,5 @@
-# OOP school library: decorate a class
->In this project, you will use the Decorator design pattern to correct the names of people.
+# OOP school library: set up associations
+>In this project, we are going to finish creating the remaining classes for our school library and create the associations between them.
 
 ## Getting Started
 - Install Ruby on your computer.
