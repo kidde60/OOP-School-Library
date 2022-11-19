@@ -44,7 +44,9 @@ def create_student
   name = gets.chomp
   print('Age: ')
   age = gets.chomp
-  student = Student.new(name, age)
+  print('Has parent permission? [Y/N]: ')
+  parent_permission = gets.chomp
+  student = Student.new(name, age, parent_permission.upcase)
   @person_list.push(student)
   p 'Student created successfully\n'
 end
