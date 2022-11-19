@@ -46,7 +46,7 @@ def create_student()
   age = gets.chomp
   print('Has parent permission? [Y/N]: ')
   parent_permission = gets.chomp
-  student = Student.new(name, age, parent_permission.upcase)
+  student = Student.new(name)
   @person_list.push(student)
   p 'Student created successfully\n'
 end
@@ -59,7 +59,7 @@ def create_teacher()
   age = gets.chomp
   print('Specialization: ')
   specialization = gets.chomp
-  teacher = Teacher.new(name, age, specialization)
+  teacher = Teacher.new(specialization)
   @person_list.push(teacher)
   p 'Teacher created successfully\n'
 end
@@ -135,7 +135,7 @@ loop do
   @rep = gets.chomp
   case @rep.to_i
   when 1
-    list_books(@book_list)
+    list_books
   when 2
     list_person(@person_list)
   when 3
