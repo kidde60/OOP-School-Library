@@ -3,7 +3,7 @@ class Student < Person
   attr_reader :classroom
 
   def initialize(name, age, parent_permission)
-    super(age, name)
+    super(age, name, parent_permission)
     @classroom = classroom
   end
 
