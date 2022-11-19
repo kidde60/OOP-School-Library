@@ -33,9 +33,6 @@ def list_books()
 end
 
 def list_person(persons)
-  if persons.size.zero?
-    print 'No person found, Please add person'
-  end
   persons.each do |person|
     p "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
   end
