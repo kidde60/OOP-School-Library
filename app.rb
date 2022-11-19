@@ -38,20 +38,18 @@ def list_person(persons)
   end
 end
 
-def create_student()
+def create_student
   p 'Add Student'
   print('Name: ')
   name = gets.chomp
   print('Age: ')
   age = gets.chomp
-  print('Has parent permission? [Y/N]: ')
-  parent_permission = gets.chomp
-  student = Student.new(name)
+  student = Student.new(name, age)
   @person_list.push(student)
   p 'Student created successfully\n'
 end
 
-def create_teacher()
+def create_teacher
   puts 'Add Teacher'
   print('Name: ')
   name = gets.chomp
@@ -59,7 +57,7 @@ def create_teacher()
   age = gets.chomp
   print('Specialization: ')
   specialization = gets.chomp
-  teacher = Teacher.new(specialization)
+  teacher = Teacher.new(name, age, specialization)
   @person_list.push(teacher)
   p 'Teacher created successfully\n'
 end
